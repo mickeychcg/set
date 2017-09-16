@@ -1,47 +1,60 @@
 
 html{
-	/text-align: center;
+	font-family: 'Open Sans', 'Arial Unicode MS',sans-serif;
 }
+
 
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #ececec;
-	font-family: 'Open Sans', sans-serif;
 }
 
 header{
-	line-height: 65px;
 	display: flex;
 	justify-content: space-between;
-	/*text-align: left;*/
 	background-color: #33495f;
 	height: 88px;
-	min-width: 400px;
+	min-width: 750px;
 	white-space: nowrap;
 	overflow-x: : scroll;
 	overflow-x: hidden
 }
 
-
 footer {
-	color: white;
-	background-color: gray;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	color: #33495f;
+	background-color: white;
+	border: 1px #33495f groove;
+	min-width: 750px;
 	width: 100%;
-	/*height: 20px;*/
+	height: 30px;
 }
 
-tr{
+footer div, a {
+	margin: auto 13px;
+}
+
+table{
+	margin: 0 2px 0 2px;
 	border:1px solid lightgray;
+	box-shadow: 8px 8px 4px 0 #ececec;
 }
 
 td {
 	text-align: center;
 	width: 120px;
+	border-radius: 4px;
 }
 
 li {
 	list-style-type:none;
+}
+
+h3 {
 }
 
 h4 {
@@ -51,46 +64,98 @@ h4 {
 }
 
 .scores {
-	vertical-align: middle;
 	text-align: center;
+	padding: 3px;
 	display: inline-block;
-	width: 125px;
-	border: 1px solid black;
-	background-color: lightgray;
+	width: 140px;
+	height: 75px;
+	color: #ececec;
+	font-size: large;
+	border-radius: 4px;
+	box-shadow: 2px 6px 12px 0 rgba(0,0,0,0.2), 2px 5px 10px 0 rgba(0,0,0,0.19);
 }
 
-.row {
-	margin: 10px 0;
+.columnLabel {
+	font-weight: bold;
+	height: 40px
+}
+
+.resultLabel {
+	height: 40px;
+}
+
+.checkSetQual{
+	border: 1px outset #ececec;
 }
 
 .scoreNum{
 	text-align: center;
 	display: inline-block;
-	width: 25px;	
+	border-color: #ececec;
+	border-style: inset;
+	width: 48px;	
 }
 
-.img-responsive{
-	/*max-width: 150px;*/
+.row {
+	display: flex;
+	justify-content: center;
+	margin: 8px 0 0 0;
+}
+
+.row div {
+	margin: 0 2px 0 2px;
+	padding: 0 1px 0 1px;
+	border-radius: 6px;
+}
+
+.img-responsive:hover {
+    opacity: .7;
 }
 
 .modalImg {
 	max-width: 70px;
 }
 
+.dirTableWrap {
+	text-align: center;
+}
 
 .dirTables {
 	display: inline-block;
-	margin: 20px auto;
+	margin: 20px 5px;
+	border-radius: 6px;
 }
 
 .dirTables td {
-	padding: 5px;
+	padding: 6px;
 }
 
 .dirTables td p {
-	text-align: left;
+	margin: 3px 0;
 }
 
+.dirTablesText {
+	text-align: left;
+	background-color: rgba(20,156,168,0.1);
+}
+
+#xColButton{
+	margin: 30px 30px;
+	text-align: center;
+	display: inline-block;
+	height: 30px;
+	color: #33495f;
+	border-radius: 4px;
+	background-color: #ececec;
+}
+#xColButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#xcolButtonWrapper {
+	display: inline-block;
+	width: 300px;
+}
 
 #directionsWrapper {
 	display: inline-block;
@@ -109,15 +174,26 @@ h4 {
 	overflow-x: hidden
 }
 
-#logo {
-	/*position: absolute;*/
-	top: 4px;
-	left: 12px;
+a #logo {
+	margin: 4px 12px;
 	display: inline-block;
 	width: 140px;
 }
 
-#wrapHeader {
-	display: inline-block;
-
+a #logo:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+#wrapScores {
+	margin-top: 7px;
+	display: inline-block;
+}
+
+#checkSetMessage table {
+	border-collapse: separate;;
+	border-spacing: 5px;
+}
+
+
+
+
