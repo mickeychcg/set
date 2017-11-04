@@ -1,7 +1,7 @@
 # Unit1Proj-Set
 
 # Live Demo
-[https://unclebconnor.github.io/set/] (https://unclebconnor.github.io/set/)
+https://unclebconnor.github.io/set/
 
 ## Synopsis
 
