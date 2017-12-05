@@ -67,6 +67,14 @@ h4 {
 	margin: 20px 0 0 0;
 }
 
+.center{
+	text-align: center;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
 .wrapper{
   display: grid;
   height: calc(100vh - 125px);
